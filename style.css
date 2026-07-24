@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Smile Group — Menu Karsilastirma | ortak stil (mevcut & onerilen)
+   ========================================================================== */
+*{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#07152b;
+  --bg2:#0a1d38;
+  --panel:#0b2140;
+  --panel2:#0c2647;
+  --ink:#ffffff;
+  --muted:#8ba3c6;
+  --muted2:#6f89af;
+  --line:rgba(255,255,255,.10);
+  --line2:rgba(255,255,255,.18);
+  --gold:#d8b46a;
+  --gold-soft:rgba(216,180,106,.14);
+  --good:#4ec98a;
+  --bad:#ef6d6d;
+  --band:#12315f;
+  --chip:#0f2a52;
+  --radius:14px;
+  --maxw:1240px;
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+}
+
+html,body{
+  background:
+    radial-gradient(1200px 600px at 80% -10%,rgba(30,64,120,.35),transparent),
+    linear-gradient(180deg,var(--bg2),var(--bg));
+  color:var(--ink);font-family:var(--font);
+  -webkit-font-smoothing:antialiased;min-height:100%;
+}
+body{padding:0 16px 60px}
+a{color:inherit;text-decoration:none}
+
+/* ---------- ust bar ---------- */
+.topbar{
+  max-width:var(--maxw);margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:18px 4px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{
+  width:42px;height:42px;border-radius:11px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--gold),#b98f45);
+  display:grid;place-items:center;color:#0a1d38;font-weight:800;font-size:20px;
+  box-shadow:0 6px 18px rgba(216,180,106,.25);
+}
+.brand .name{font-weight:700;letter-spacing:.14em;font-size:15px}
+.brand .name span{color:var(--gold)}
+.brand .sub{font-size:11px;color:var(--muted2);letter-spacing:.18em;text-transform:uppercase}
+
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 14px;border-radius:999px;font-size:12.5px;font-weight:600;
+  border:1px solid var(--line2);background:rgba(255,255,255,.04);
+}
+.badge b{font-size:14px}
+.badge.mevcut{border-color:rgba(239,109,109,.4);background:rgba(239,109,109,.10);color:#ffd7d7}
+.badge.onerilen{border-color:rgba(78,201,138,.4);background:rgba(78,201,138,.10);color:#c9ffe4}
+
+.switch{display:flex;gap:8px}
+.switch a{
+  font-size:12.5px;padding:8px 13px;border-radius:999px;
+  border:1px solid var(--line2);background:rgba(255,255,255,.03);color:var(--muted);
+  transition:.15s;
+}
+.switch a:hover{color:#fff;border-color:var(--gold);background:var(--gold-soft)}
+.switch a.active{color:#0a1d38;background:var(--gold);border-color:var(--gold);font-weight:700}
+
+/* ---------- baslik ---------- */
+.hero{max-width:var(--maxw);margin:6px auto 18px;padding:0 4px}
+.hero h1{font-size:22px;font-weight:800;letter-spacing:.01em}
+.hero p{color:var(--muted);font-size:14px;margin-top:6px;max-width:70ch;line-height:1.55}
+.hero .count{color:var(--gold);font-weight:700}
+
+/* ---------- mega panel ---------- */
+.panel{
+  max-width:var(--maxw);margin:0 auto;
+  background:linear-gradient(180deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+  overflow:hidden;
+}
+.panel .cols{
+  column-count:4;column-gap:26px;
+  padding:30px 30px 12px;
+}
+.cat{break-inside:avoid;margin-bottom:30px;display:inline-block;width:100%}
+.cat > h3{
+  font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  padding-bottom:10px;margin-bottom:12px;border-bottom:1px solid var(--line2);
+  color:#fff;position:relative;
+}
+.cat > h3::after{content:"";position:absolute;left:0;bottom:-1px;width:38px;height:2px;background:var(--gold)}
+.cat.flag > h3{color:#ffd7d7}
+.cat.flag > h3::after{background:var(--bad)}
+
+.item{margin-bottom:11px}
+.item .t{font-size:13.5px;font-weight:600;line-height:1.25;color:#eaf1fb}
+.item .d{font-size:11.5px;color:var(--muted2);line-height:1.35;margin-top:2px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.item.dupe .t::after{content:" ⟲ tekrar";color:var(--bad);font-size:10px;font-weight:700}
+.item.mis .t::after{content:" ⚠ yanlis kolon";color:#f3c969;font-size:10px;font-weight:700}
+.item .tag{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.04em}
+
+.subgroup{font-size:11px;font-style:italic;color:var(--muted);
+  margin:14px 0 8px;padding-top:8px;border-top:1px dashed var(--line)}
+
+/* ---------- alt sertifika bandi ---------- */
+.certbar{
+  background:var(--band);border-top:1px solid var(--line2);
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:14px 26px;flex-wrap:wrap;
+}
+.certbar .left{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.certbar .lab{font-size:11px;color:var(--muted);letter-spacing:.04em}
+.cchip{
+  font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#dbe8fb;
+  border:1px solid var(--line2);border-radius:6px;padding:5px 9px;background:rgba(255,255,255,.05);
+}
+.certbar .right{display:flex;align-items:center;gap:16px;font-size:12px;color:#dbe8fb}
+.certbar .right b{color:#fff}
+.star{color:var(--gold)}
+
+/* ---------- onerilen: yan serit ---------- */
+.aside{
+  max-width:var(--maxw);margin:18px auto 0;display:grid;gap:16px;
+  grid-template-columns:1fr 1fr;
+}
+.aside .box{
+  border:1px dashed var(--line2);border-radius:12px;padding:18px 20px;
+  background:rgba(255,255,255,.02);
+}
+.aside .box h4{font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+.aside .box .note{font-size:11.5px;color:var(--muted2);margin-bottom:12px}
+.aside .box.seo h4{color:#f3c969}
+.aside .box.tech h4{color:#7ec8ff}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags span{
+  font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:999px;
+  padding:5px 10px;background:rgba(255,255,255,.03);
+}
+
+/* ---------- footer note ---------- */
+.foot{max-width:var(--maxw);margin:22px auto 0;color:var(--muted2);font-size:12px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.foot a{color:var(--gold)}
+
+/* ---------- responsive ---------- */
+@media(max-width:980px){
+  .panel .cols{column-count:2;padding:24px 22px 8px}
+  .aside{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .panel .cols{column-count:1;padding:20px 18px 6px}
+  .item .d{white-space:normal}
+  .topbar{gap:10px}
+}

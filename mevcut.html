@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mevcut Menü — Smile Group</title>
+<meta name="description" content="Smile Group mevcut hizmet menüsü (76 madde).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo">S</span>
+    <span>
+      <span class="name">SMILE<span> GROUP</span></span><br>
+      <span class="sub">Menü Karşılaştırma</span>
+    </span>
+  </a>
+  <span class="badge mevcut"><b>MEVCUT MENÜ</b> · 76 madde · 8 kolon</span>
+  <nav class="switch">
+    <a href="index.html">Karşılaştır</a>
+    <a href="mevcut.html" class="active">Mevcut</a>
+    <a href="onerilen.html">Önerilen</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <h1>Mevcut Hizmet Menüsü</h1>
+  <p>Sitede şu an yayında olan menünün birebir görünümü. Toplam <span class="count">76 satır</span>;
+     içinde gerçek tedaviler, semptom/istek sayfaları ve materyal varyasyonları bir arada.</p>
+</div>
+
+<div class="panel">
+  <div class="cols" id="cols"></div>
+
+  <div class="certbar">
+    <div class="left">
+      <span class="lab">Tarafından Onaylı:</span>
+      <span class="cchip">TDB APPROVED</span>
+      <span class="cchip">HEALTH TÜRKİYE</span>
+      <span class="cchip">ISO 9001:2015</span>
+      <span class="cchip">ISO 10002:2018</span>
+      <span class="cchip">ISO 45001:2018</span>
+    </div>
+    <div class="right">
+      <span>Trustpilot <b>4.7/5</b></span>
+      <span>Google Reviews <span class="star">★</span> <b>4.9/5</b></span>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <span>Smile Group · mevcut menü dökümü — yalnızca kıyas amaçlı iç materyal.</span>
+  <span><a href="onerilen.html">→ Önerilen sürümü gör</a></span>
+</div>
+
+<script>
+const COLS = [
+  { name:"Çocuk Diş Hekimliği", items:[
+    {t:"Yer Tutucu", d:"Küçük bir önlemle çocuğunuzu ileride büyük tel..."},
+    {t:"Fluorid (Flor) Uygulaması", d:"Çocuğunuzun gelecekteki diş sağlığını güçlendirir..."},
+    {t:"Fissür Örtücü", d:"Kalıcı dişleri çürüklerden koruyan uygulama..."},
+    {t:"Çocuk Ortodontisi", d:"Ağız ve çene gelişimini zamanında takip..."},
+    {t:"Biberon Çürüğü", d:"Bebeğinizin gülüşünü koruyun, erken dönem..."},
+  ]},
+  { name:"Dijital Gülüş Tasarımı", items:[
+    {t:"Dijital Anestezi", d:"Lokal anestezik ilacın kontrollü verilmesi..."},
+    {t:"İnlay ve Onlay Dolgular", d:"Dişinizi koruyan akıllı restorasyonlar..."},
+    {t:"Hollywood Gülüşü", d:"Kamera karşısına çıkmaya hazır bir gülüş!..."},
+    {t:"Estetik Dolgular", d:"Doğal dişiniz gibi görünen onarımlar..."},
+    {t:"1 Günde Diş", d:"Aynı gün yeni gülüşünüzle klinikten ayrılın..."},
+    {t:"Gülüş Tasarımı", d:"Hayal ettiğiniz gülüşü birlikte planlıyoruz..."},
+  ]},
+  { name:"Estetik Tedaviler", items:[
+    {t:"Zirkonyum Diş Kaplama", d:"Estetik ve premium dayanıklılık..."},
+    {t:"Monolitik Zirkonyum", d:"Maksimum çiğneme kuvveti isteyen arka dişler için..."},
+    {t:"Porselen Lamina (Yaprak Diş)", d:"Dişlerinize dokunmadan gelen kusursuz gülüş..."},
+    {t:"Kompozit Lamina", d:"Birkaç saat içinde yepyeni bir gülüş..."},
+    {t:"Empress Diş Kaplama", d:"Ön dişlerde kusursuz estetik ve cam seramik..."},
+    {t:"E-Max Diş Kaplama", d:"Doğal diş minesindeki ışığı yakalayan kusursuz..."},
+    {t:"Diş Taşı Temizliği", d:"Sağlıklı bir gülüşün temeli; derinlemesine..."},
+    {t:"Diş Eti Estetiği (Pembe Estetik)", d:"Sağlıklı ve simetrik diş etleri..."},
+    {t:"Cam Seramik Kaplama", d:"Diş minesine en yakın estetik ve saf..."},
+    {t:"Bonding Tedavisi", d:"Tek seansta, dişlerinize zarar vermeden..."},
+    {t:"Diş Beyazlatma (Bleaching)", d:"Sadece 45 dakikada güvenli, canlı ve..."},
+  ]},
+  { name:"Genel Tedaviler", items:[
+    {t:"Sabit Protez Tedavileri", d:"Doğal parlaklık ve premium dayanıklılık..."},
+    {t:"Porselen Kron Köprü Tedavileri", d:"Eksik dişleri tamamlayın, güvenle çiğneyin..."},
+    {t:"Diş Kaplama Tedavileri", d:"Eski nesil yapay görüntülere veda edin..."},
+    {t:"Kanal Tedavisi", d:"Ağrılarınıza veda, dişinizi güvene alın..."},
+    {t:"Gece Plağı", d:"Huzurlu geceler; çene ekleminizi korur..."},
+    {t:"Full Ağız Tedavileri", d:"Tüm dişlerinizi kapsayan bütüncül tedavi..."},
+    {t:"Estetik Diş Dolgusu", d:"Çürüklerin gülüşünüzü gölgelemesine izin vermeyin..."},
+    {t:"Diş Çekimi", d:"Ağrısız, hızlı ve konforlu... diş hekimliğinin temeli..."},
+    {t:"Diş Çekimi", d:"Ağrısız, hızlı ve konforlu... diş hekimliğinin temeli..."},
+    {t:"20'lik Diş Çekimi (Gömülü Diş Cerrahisi)", d:"Çene cerrahisinde konfor: ağrısız, dikişsiz..."},
+  ]},
+  { name:"Gülüşümü Değiştir", items:[
+    {t:"Diş Etim Kanıyor", d:"Fırçalarken veya sert bir meyve ısırırken..."},
+    {t:"Dişlerim Aşındı", d:"Dişlerinizin boyu giderek kısalıyor mu?..."},
+    {t:"Dişlerim Ayrık", d:"Aradaki boşluklar konuşurken belli oluyor..."},
+    {t:"Dişlerimde Lekeler Var", d:"Ne kadar fırçalasanız geçmeyen lekeler..."},
+    {t:"Gülerken Rahat Hissetmiyorum", d:"Fotoğrafta gülüşünüzü saklıyorsanız..."},
+    {t:"Dişlerim Yamuk", d:"Çapraşıklık veya dizilim bozukluğu..."},
+    {t:"Dişlerim Küçük Görünüyor", d:"Dişlerinizin boyutundan memnun değilseniz..."},
+    {t:"Gülüş Tasarımı İstiyorum", d:"Sizi tam yansıtan, özgür bir gülüş..."},
+  ]},
+  { name:"İmplant Tedavileri", items:[
+    {t:"Dişlerim Gıcırdıyor", d:"Dişlerinizi ağrımadan koruyun, sessiz uyku..."},
+    {t:"Smile Fast", d:"Dişsiz kalmadan yeni gülüşünüze kavuşun..."},
+    {t:"Kemik Grefti (Kemik Tozu Uygulaması)", d:"Güçlü kökler için sağlam bir temel..."},
+    {t:"Sinüs Lifting (Sinüs Yükseltme)", d:"İleri kemik erimesinde bile implant..."},
+    {t:"Çoklu Diş (Köprülü) İmplant", d:"Yan yana birden fazla diş eksikliğinde..."},
+    {t:"Full Ağız İmplant", d:"Tüm diş kayıplarında ömürlük ve güçlü..."},
+    {t:"Tek Diş İmplant Tedavisi", d:"Tek diş eksikliğinde bile doğal ve kalıcı..."},
+    {t:"Lazerli İmplant Tedavisi", d:"Dikişsiz, kanamasız ve konforlu implant..."},
+    {t:"All On 6", d:"Maksimum güç, maksimum stabilite..."},
+    {t:"All on 4", d:"Tam çene eksikliklerinde hızlı ve sabit..."},
+    {t:"1 Günde İmplant", d:"Hızlı, planlı ve konforlu bir implant..."},
+  ]},
+  { name:"Neye İhtiyacınız Var?", items:[
+    {t:"Horluyorum", d:"Horlama protezi ile kesintisiz oksijen..."},
+    {t:"Dişlerimi Sıkıyorum", d:"Huzurlu uykular, ağrısız sabahlar..."},
+    {t:"Çene Ağrısı Yaşıyorum", d:"Eklem ve kas ağrılarına son..."},
+    {sub:"Ağız Sağlığı"},
+    {t:"Dişlerim Sızlıyor", d:"Soğuk, sıcak ve tatlı korkusuna son..."},
+    {t:"Dişim Ağrıyor", d:"Acıya anında son; ağrısız ve konforlu..."},
+    {t:"Diş Etim Kanıyor", d:"Gizli enfeksiyonu lazer teknolojisiyle..."},
+    {t:"Diş Eti Problemim Var", d:"Lazer destekli diş eti detoksu..."},
+    {t:"Ağız Kokusu Problemim Var", d:"Ferah nefesinizi kalıcı olarak..."},
+    {sub:"Çiğneme ve Fonksiyon"},
+    {t:"Rahat Çiğneyemiyorum", d:"Yemek yemenin keyfini ertelemeyin..."},
+    {t:"Isıramıyorum", d:"Isırma fonksiyonunu geri kazanın..."},
+    {t:"Dişim Kırıldı", d:"Kırılan dişinizi çekilmekten kurtarın..."},
+    {t:"Dişim Eksik", d:"Diş implantı teknolojisi ile boşlukları..."},
+    {t:"Dişim Çatladı", d:"Gizemli ağrılara son; kılcal çatlaklar..."},
+    {sub:"Gülüş ve Estetik"},
+    {t:"Ön Dişim Kırık", d:"Tek seansta kırıkları unutun..."},
+    {t:"Gülüşümden Memnun Değilim", d:"Gülüşünüzü saklamayı bırakın..."},
+    {t:"Dolgum Eskidi", d:"Eski ve koyu renkli dolgulara veda..."},
+    {t:"Dişlerim Sarı veya Lekeli", d:"30 dakikada ışıltılı bir değişim..."},
+    {t:"Dişlerim Çapraşık", d:"Hayatınızı ertelemeden dümdüz dişler..."},
+    {t:"Daha Estetik Dişler İstiyorum", d:"Mikro-estetiğin zirvesi, doğallıktan ödün vermeden..."},
+  ]},
+  { name:"Ortodonti", items:[
+    {t:"Pekiştirme Tedavisi (Ortodonti Sonrası Koruma)", d:"Kusursuz gülüşünüzü ömür boyu koruyun..."},
+    {t:"Ortognatik Cerrahi (Çene Ameliyatı)", d:"Yüz hatlarınızdaki gerçek potansiyeli..."},
+    {t:"Lingual Ortodonti (Görünmeyen İç Teller)", d:"Siz söylemedikçe kimse fark etmez..."},
+    {t:"Invisalign (Şeffaf Plak Tedavisi)", d:"Gülüşünüzü gizlemeden değiştirin..."},
+    {t:"Diş Teli Tedavisi (Klasik Ortodonti)", d:"Doğal, kalıcı ve kusursuz hizalanma..."},
+    {t:"Çocuk Ortodontisi", d:"Çocuğunuzun gülüşünü ve çene gelişimini..."},
+  ]},
+];
+
+const root = document.getElementById('cols');
+COLS.forEach(col=>{
+  const cat = document.createElement('div');
+  cat.className = 'cat';
+  cat.innerHTML = '<h3>'+col.name+'</h3>';
+  col.items.forEach(it=>{
+    if(it.sub){
+      const s=document.createElement('div'); s.className='subgroup'; s.textContent=it.sub; cat.appendChild(s); return;
+    }
+    const d=document.createElement('div'); d.className='item';
+    d.innerHTML = '<div class="t">'+it.t+'</div><div class="d">'+it.d+'</div>';
+    cat.appendChild(d);
+  });
+  root.appendChild(cat);
+});
+</script>
+</body>
+</html>

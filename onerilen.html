@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Önerilen Menü — Smile Group</title>
+<meta name="description" content="Smile Group önerilen hizmet menüsü (45 gerçek hizmet, 8 branş).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo">S</span>
+    <span>
+      <span class="name">SMILE<span> GROUP</span></span><br>
+      <span class="sub">Menü Karşılaştırma</span>
+    </span>
+  </a>
+  <span class="badge onerilen"><b>ÖNERİLEN MENÜ</b> · 45 gerçek hizmet · 8 branş</span>
+  <nav class="switch">
+    <a href="index.html">Karşılaştır</a>
+    <a href="mevcut.html">Mevcut</a>
+    <a href="onerilen.html" class="active">Önerilen</a>
+  </nav>
+</div>
+
+<div class="hero">
+  <h1>Önerilen Hizmet Menüsü</h1>
+  <p>Diş hekimliğinin tanınan branşlarına göre kurgulanmış, <span class="count">45 gerçek hizmet</span>.
+     Semptom/istek sayfaları ve teknoloji vaatleri menüden çıkarılıp ayrı alanlara taşındı;
+     aynı hizmetin materyal çeşitleri tek başlıkta toplandı.</p>
+</div>
+
+<div class="panel">
+  <div class="cols" id="cols"></div>
+
+  <div class="certbar">
+    <div class="left">
+      <span class="lab">Tarafından Onaylı:</span>
+      <span class="cchip">TDB APPROVED</span>
+      <span class="cchip">HEALTH TÜRKİYE</span>
+      <span class="cchip">ISO 9001:2015</span>
+      <span class="cchip">ISO 10002:2018</span>
+      <span class="cchip">ISO 45001:2018</span>
+    </div>
+    <div class="right">
+      <span>Trustpilot <b>4.7/5</b></span>
+      <span>Google Reviews <span class="star">★</span> <b>4.9/5</b></span>
+    </div>
+  </div>
+</div>
+
+<div class="aside">
+  <div class="box seo">
+    <h4>Şikayetiniz Ne? — SEO / Blog alanı</h4>
+    <div class="note">Menüden çıkarıldı, ayrı huni sayfalarına taşındı. Arama trafiği için değerli;
+      hizmet menüsünde durmamalı.</div>
+    <div class="tags">
+      <span>Dişim ağrıyor</span><span>Diş etim kanıyor</span><span>Horluyorum</span>
+      <span>Dişlerimi sıkıyorum</span><span>Ağız kokusu</span><span>Dişim kırıldı</span>
+      <span>Dişim eksik</span><span>Dişim çatladı</span><span>Dişlerim çapraşık</span>
+      <span>Dişlerim sarı/lekeli</span><span>Gülüşümden memnun değilim</span><span>Çene ağrısı</span>
+    </div>
+  </div>
+  <div class="box tech">
+    <h4>Neden Biz? / Teknolojimiz</h4>
+    <div class="note">Bunlar hizmet değil, klinik özelliği. "Neden biz" bölümünde vitrin olur.</div>
+    <div class="tags">
+      <span>Dijital Anestezi</span><span>Ağrısız Tedavi</span><span>İntraoral Tarayıcı</span>
+      <span>CAD-CAM</span><span>Dijital Tomografi</span><span>Lazer Diş Hekimliği</span>
+      <span>Sedasyon</span>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <span>Smile Group · önerilen menü — 45 hizmet, semptom sayfaları ayrıştırıldı.</span>
+  <span><a href="mevcut.html">← Mevcut sürümle karşılaştır</a></span>
+</div>
+
+<script>
+const COLS = [
+  { name:"Estetik Diş Hekimliği", items:[
+    {t:"Gülüş Tasarımı (DSD)", d:"Yüz analizine dayalı kişiye özel gülüş planlaması."},
+    {t:"Laminate Veneer (Yaprak Diş)", d:"Minimal aşındırmayla porselen/kompozit kaplama."},
+    {t:"Diş Kaplama / Kron", d:"Zirkonyum · E-max · Empress · cam seramik seçenekleri."},
+    {t:"Diş Beyazlatma", d:"Ofis tipi ve ev tipi profesyonel beyazlatma."},
+    {t:"Bonding", d:"Tek seansta kompozitle şekil ve renk düzeltme."},
+    {t:"Estetik Kompozit Dolgu", d:"Diş rengiyle uyumlu, görünmeyen dolgular."},
+    {t:"Pembe Estetik (Diş Eti)", d:"Simetrik diş eti seviyesi ve renk düzenlemesi."},
+  ]},
+  { name:"İmplant Tedavileri", items:[
+    {t:"Tek Diş İmplantı", d:"Komşu dişlere dokunmadan tek eksiğin çözümü."},
+    {t:"Çoklu / Köprülü İmplant", d:"Birden fazla eksik dişte sabit çözüm."},
+    {t:"All-on-4 / All-on-6", d:"Tam çenede sabit dişler için tüm ağız sistemi."},
+    {t:"Hemen Yükleme İmplant", d:"Uygun vakada aynı gün geçici diş."},
+    {t:"Kemik Grefti (Kemik Tozu)", d:"İmplant için yetersiz kemiğin güçlendirilmesi."},
+    {t:"Sinüs Lifting (Sinüs Yükseltme)", d:"Üst çene arka bölgede kemik kazanımı."},
+  ]},
+  { name:"Ortodonti", items:[
+    {t:"Metal / Şeffaf Braket (Klasik Tel)", d:"Çapraşıklık ve kapanış bozukluğu tedavisi."},
+    {t:"Lingual (İç) Ortodonti", d:"Dişin arkasına takılan görünmeyen tel."},
+    {t:"Şeffaf Plak (Invisalign & muadili)", d:"Çıkarılabilir şeffaf plaklarla hizalama."},
+    {t:"Çocuk Ortodontisi (Erken Tedavi)", d:"Gelişim çağında çene yönlendirmesi."},
+    {t:"Pekiştirme (Retansiyon)", d:"Tedavi sonrası sonucun kalıcılığı."},
+    {t:"Ortognatik Cerrahi İşbirliği", d:"İleri çene uyumsuzluğunda cerrahi destek."},
+  ]},
+  { name:"Protez (Protetik)", items:[
+    {t:"Kron & Köprü (Sabit Protez)", d:"Zarar görmüş veya eksik dişte sabit onarım."},
+    {t:"Total Protez (Tam Damak)", d:"Dişsiz çenede tam hareketli protez."},
+    {t:"Bölümlü (Parsiyel) Protez", d:"Kısmi eksiklikte hareketli çözüm."},
+    {t:"İmplant Üstü / Hassas Tutuculu Protez", d:"Daha stabil, tutuculu protez seçeneği."},
+    {t:"İnlay / Onlay", d:"Büyük madde kaybında laboratuvar dolgusu."},
+    {t:"Gece Plağı & Horlama-Apne Plağı", d:"Diş sıkma ve horlama için ağız içi aparey."},
+  ]},
+  { name:"Endodonti (Kanal)", items:[
+    {t:"Kanal Tedavisi", d:"İltihaplı diş sinirinin tedavisi."},
+    {t:"Kanal Yenileme (Retreatment)", d:"Başarısız kanal tedavisinin yenilenmesi."},
+    {t:"Apikal Rezeksiyon", d:"Kök ucu lezyonlarında cerrahi tedavi."},
+    {t:"Travma / Kırık Diş Tedavisi", d:"Darbe sonrası dişin kurtarılması."},
+  ]},
+  { name:"Ağız, Diş ve Çene Cerrahisi", items:[
+    {t:"Diş Çekimi", d:"Kurtarılamayan dişin konforlu çekimi."},
+    {t:"Gömülü 20'lik Diş Cerrahisi", d:"Yirmi yaş dişi operasyonu."},
+    {t:"Kist / Apse Operasyonları", d:"Çene kist ve enfeksiyonlarının tedavisi."},
+    {t:"Frenektomi", d:"Dudak/dil bağı düzeltme operasyonu."},
+    {t:"Ortognatik (Çene) Cerrahisi", d:"Çene pozisyonu ve fonksiyon düzeltme."},
+    {t:"Sedasyon / Genel Anestezi Altında Tedavi", d:"Korku ve özel durumlar için konforlu tedavi."},
+  ]},
+  { name:"Periodontoloji (Diş Eti)", items:[
+    {t:"Diş Taşı Temizliği (Detartraj)", d:"Diş eti sağlığının temeli."},
+    {t:"Diş Eti Hastalığı Tedavisi (Küretaj/Flap)", d:"Diş eti iltihabı ve kemik kaybı tedavisi."},
+    {t:"Diş Eti Çekilmesi & Greft", d:"Açığa çıkan kök yüzeyinin örtülmesi."},
+    {t:"Kron Boyu Uzatma", d:"Estetik ve protez öncesi diş eti düzenlemesi."},
+  ]},
+  { name:"Çocuk Diş Hekimliği (Pedodonti)", items:[
+    {t:"Çürük Tedavisi & Dolgu", d:"Süt ve daimî dişlerde çürük onarımı."},
+    {t:"Fissür Örtücü", d:"Çürüğe karşı koruyucu örtü."},
+    {t:"Flor Uygulaması", d:"Mineyi güçlendiren koruma."},
+    {t:"Yer Tutucu", d:"Erken düşen süt dişinde yer koruma."},
+    {t:"Biberon Çürüğünden Korunma", d:"Erken dönem koruyucu yaklaşım."},
+    {t:"Sedasyon Altında Çocuk Tedavisi", d:"Uyumsuz vakalarda konforlu tedavi."},
+  ]},
+];
+
+const root = document.getElementById('cols');
+COLS.forEach(col=>{
+  const cat = document.createElement('div');
+  cat.className = 'cat';
+  cat.innerHTML = '<h3>'+col.name+'</h3>';
+  col.items.forEach(it=>{
+    const d=document.createElement('div'); d.className='item';
+    d.innerHTML = '<div class="t">'+it.t+'</div><div class="d">'+it.d+'</div>';
+    cat.appendChild(d);
+  });
+  root.appendChild(cat);
+});
+</script>
+</body>
+</html>

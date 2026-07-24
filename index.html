@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menü Karşılaştırma — Smile Group</title>
+<meta name="description" content="Smile Group hizmet menüsü: mevcut (76 madde) vs önerilen (45 gerçek hizmet) karşılaştırması.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  .lead{color:var(--muted);font-size:15px;line-height:1.6;max-width:78ch;margin:8px 0 26px}
+  .lead b{color:#fff}
+
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}
+  .card{
+    border:1px solid var(--line2);border-radius:16px;padding:22px 24px;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));
+    display:flex;flex-direction:column;gap:14px;transition:.18s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 22px 50px rgba(0,0,0,.4);border-color:var(--gold)}
+  .card .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted2)}
+  .card .big{font-size:40px;font-weight:800;line-height:1}
+  .card .big small{font-size:15px;font-weight:600;color:var(--muted);margin-left:6px}
+  .card.a .big{color:#ff9c9c}
+  .card.b .big{color:#79e6ad}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .card li{font-size:12.5px;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+  .card li::before{content:"–";color:var(--gold)}
+  .card .go{
+    margin-top:auto;align-self:flex-start;padding:10px 18px;border-radius:999px;font-weight:700;font-size:13px;
+    background:var(--gold);color:#0a1d38;
+  }
+  .card.a .go{background:rgba(255,255,255,.08);color:#fff;border:1px solid var(--line2)}
+
+  .delta{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:34px;
+  }
+  .delta .d{border:1px solid var(--line);border-radius:12px;padding:16px 16px;background:rgba(255,255,255,.02)}
+  .delta .d .n{font-size:24px;font-weight:800;color:var(--gold)}
+  .delta .d .l{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.35}
+
+  .cmp-head{display:flex;align-items:center;justify-content:space-between;margin:6px 0 12px;flex-wrap:wrap;gap:10px}
+  .cmp-head h2{font-size:17px}
+  .cmp-head .hint{font-size:12px;color:var(--muted2)}
+  .frames{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .frame{border:1px solid var(--line2);border-radius:14px;overflow:hidden;background:#07152b}
+  .frame .fh{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line);font-size:12.5px}
+  .frame .fh .tag{font-weight:700}
+  .frame.a .fh .tag{color:#ff9c9c}
+  .frame.b .fh .tag{color:#79e6ad}
+  .frame .fh a{font-size:11.5px;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 10px}
+  .frame iframe{width:100%;height:560px;border:0;display:block;background:#07152b}
+
+  @media(max-width:900px){
+    .cards,.frames{grid-template-columns:1fr}
+    .delta{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo">S</span>
+    <span>
+      <span class="name">SMILE<span> GROUP</span></span><br>
+      <span class="sub">Menü Karşılaştırma</span>
+    </span>
+  </a>
+  <nav class="switch">
+    <a href="index.html" class="active">Karşılaştır</a>
+    <a href="mevcut.html">Mevcut</a>
+    <a href="onerilen.html">Önerilen</a>
+  </nav>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Hizmet Menüsü — Mevcut vs Önerilen</h1>
+    <p class="lead">Sitedeki mevcut menü <b>76 satır</b> içeriyor; ancak bunların büyük kısmı gerçek hizmet değil —
+      semptom/istek açılış sayfaları, tekrarlar ve aynı hizmetin materyal çeşitleri. Önerilen sürüm,
+      diş hekimliğinin tanınan branşlarına göre <b>45 gerçek hizmet</b> bırakıyor; semptom sayfalarını ve
+      teknoloji vaatlerini ayrı alanlara taşıyor. Daha az satır, <b>daha çok gerçek hizmet</b>.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card a" href="mevcut.html">
+      <div class="k">Mevcut Menü</div>
+      <div class="big">76<small>satır</small></div>
+      <ul>
+        <li>28 satır semptom/istek sayfası (hizmet değil)</li>
+        <li>2 tekrar (Diş Çekimi ×2, Çocuk Ortodontisi ×2)</li>
+        <li>6+ satır aynı hizmetin materyal çeşidi (Kron)</li>
+        <li>Yanlış kolonlar ve marka adları karışık</li>
+      </ul>
+      <span class="go">Mevcut menüyü aç →</span>
+    </a>
+
+    <a class="card b" href="onerilen.html">
+      <div class="k">Önerilen Menü</div>
+      <div class="big">45<small>gerçek hizmet</small></div>
+      <ul>
+        <li>8 branş: estetik, implant, ortodonti, protez…</li>
+        <li>Semptom sayfaları ayrı "Şikayetiniz Ne?" alanına</li>
+        <li>Teknoloji vaatleri "Neden Biz" bölümüne</li>
+        <li>Eklenen gerçek hizmetler: frenektomi, greft, kanal yenileme…</li>
+      </ul>
+      <span class="go">Önerilen menüyü aç →</span>
+    </a>
+  </div>
+
+  <div class="delta">
+    <div class="d"><div class="n">76 → 45</div><div class="l">Satır sayısı sadeleşti</div></div>
+    <div class="d"><div class="n">−28</div><div class="l">Semptom/SEO sayfası menüden çıktı</div></div>
+    <div class="d"><div class="n">−2</div><div class="l">Tekrar temizlendi</div></div>
+    <div class="d"><div class="n">+9</div><div class="l">Eksik olan gerçek hizmet eklendi</div></div>
+  </div>
+
+  <div class="cmp-head">
+    <h2>Yan Yana Görünüm</h2>
+    <span class="hint">İki menünün canlı önizlemesi — her biri kendi içinde kaydırılabilir.</span>
+  </div>
+  <div class="frames">
+    <div class="frame a">
+      <div class="fh"><span class="tag">MEVCUT · 76</span><a href="mevcut.html" target="_blank">Tam ekran aç ↗</a></div>
+      <iframe src="mevcut.html" title="Mevcut menü" loading="lazy"></iframe>
+    </div>
+    <div class="frame b">
+      <div class="fh"><span class="tag">ÖNERİLEN · 45</span><a href="onerilen.html" target="_blank">Tam ekran aç ↗</a></div>
+      <iframe src="onerilen.html" title="Önerilen menü" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Smile Group · iç kıyas materyali — smilegroup.com.tr menü revizyonu.</span>
+    <span>Hazırlayan: dijital ekip</span>
+  </div>
+</div>
+
+</body>
+</html>

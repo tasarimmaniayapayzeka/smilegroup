@@ -68,7 +68,8 @@ h3{font-family:var(--font-head);font-size:17px;margin-bottom:8px}
 
 /* bars */
 .bars{display:flex;flex-direction:column;gap:9px;margin-top:12px}
-.brow{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center}
+.brow{display:grid;grid-template-columns:110px 1fr auto;gap:10px;align-items:center}
+.brow .val{font-size:11.5px;font-weight:700;color:var(--text);white-space:nowrap}
 .brow .lbl{font-size:12px;font-weight:600;color:var(--muted);text-align:right}
 .btrack{height:14px;position:relative;background:rgba(120,200,255,.05);border-radius:0 4px 4px 0}
 .bfill{height:14px;border-radius:0 4px 4px 0;position:relative}

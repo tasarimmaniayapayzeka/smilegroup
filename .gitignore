@@ -2,3 +2,6 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+
+# Görsel üretim ara çıktıları (~1.2 GB) — yerel yedekte durur, repoya girmez
+gorseller/site/**/*.png
